@@ -46,11 +46,11 @@ export default function Bot() {
                              src={"/folder.png"}
                              alt={"ai example image"}/>
                         <p>Need advice?</p>
-                        <button className={"h-12 w-5/6 bg-black rounded-lg"}>Resources</button>
+                        <button className={"h-12 w-5/6 bg-black rounded-lg transition duration-300 ease-in-out"}>Resources</button>
                     </div>
                     <div className={"space-y-4 w-full"}>
-                        <button className={"h-12 w-full bg-fuchsia-400 rounded-lg"}>Upgrade</button>
-                        <button className={"h-12 w-full rounded-lg bg-chat-color"}>FAQ</button>
+                        <button className={"h-12 w-full bg-fuchsia-400 rounded-lg transition duration-300 ease-in-out"}>Upgrade</button>
+                        <button className={"h-12 w-full rounded-lg bg-chat-color transition duration-300 ease-in-out"}>FAQ</button>
                     </div>
                 </div>
                 <div id={"right"} className={"w-full h-screen"}>
@@ -70,7 +70,7 @@ export default function Bot() {
                                 required
                                 value={data} onChange={(e) => setData(e.target.value)}/>
                             <button
-                                className={"bg-fuchsia-400 rounded-lg font-extrabold w-2/12"}
+                                className={"bg-fuchsia-400 rounded-lg font-extrabold w-2/12 transition duration-300 ease-in-out"}
                                 onClick={() => sendData(data)}>Submit
                             </button>
                         </div>
