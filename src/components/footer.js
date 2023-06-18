@@ -7,10 +7,8 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" className="flex items-center">
-                            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3"
-                                 alt="FlowBite Logo"/>
-                            <span
-                                className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                            <img src="/logo.png" className="h-8 mr-3"
+                                 alt="Delopar Logo"/>
                         </a>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

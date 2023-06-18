@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/navbar'
-// import ai_example_image from "../../public/bot_page_example.png"
+import Footer from '../components/footer'
+
 
 export default function Home() {
     return (
@@ -33,7 +34,8 @@ export default function Home() {
                 </div>
                 <div id={"right"} className={"w-1/2"}>
                     <div className={"relative h-full w-full"}>
-                        <img className={"absolute inset-y-0 right-0 h-screen"} src={"/bot_page_example.png"}
+                        <img className={"absolute inset-y-0 right-0 h-screen "}
+                             src={"/bot_page_example.png"}
                              alt={"ai example image"}/>
                     </div>
                 </div>
@@ -65,6 +67,8 @@ export default function Home() {
                     <h1 className={"font-extrabold text-5xl"}>And it’s all in our data.</h1>
                 </div>
             </div>
+            <Footer/>
+
         </div>
     )
 }
