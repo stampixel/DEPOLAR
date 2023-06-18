@@ -12,9 +12,10 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}></Route>
-                    <Route path="/landing" element={<Pricing/>}></Route>
+                    <Route path="/pricing" element={<Pricing/>}></Route>
                     <Route path="/resources" element={<Resources/>}></Route>
                     <Route path="/bot" element={<Bot/>}></Route>
+
                 </Routes>
             </BrowserRouter>
         </div>

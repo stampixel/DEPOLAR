@@ -33,6 +33,9 @@ module.exports = {
                 'gr5': '#1C0D37',
                 'gr6': '#070A12',
 
+                'gr7': '#1B202D',
+                'gr8': '#473D87',
+
                 'bot-color': '#10141F',
                 'chat-color': '#22293A'
             }
