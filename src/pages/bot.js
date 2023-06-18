@@ -49,7 +49,7 @@ export default function Bot() {
                         <button className={"h-12 w-5/6 bg-black rounded-lg"}>Resources</button>
                     </div>
                     <div className={"space-y-4 w-full"}>
-                        <button className={"h-12 w-full bg-fuchsia-400 rounded-lg"}>Updated</button>
+                        <button className={"h-12 w-full bg-fuchsia-400 rounded-lg"}>Upgrade</button>
                         <button className={"h-12 w-full rounded-lg bg-chat-color"}>FAQ</button>
                     </div>
                 </div>

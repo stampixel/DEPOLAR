@@ -16,7 +16,9 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "localhost:3000"
+    "localhost:3000",
+    "https://depolar.vercel.app",
+    "http://depolar.vercel.app"
 ]
 
 """In order to make cross-origin requests -- i.e., requests that originate from a different protocol, IP address, 
@@ -59,11 +61,11 @@ async def argument(req: Request):
     question = data['content']
     response = openai.ChatCompletion.create(
         model=MODEL,
-    #     messages=[{"role": "system", "content": """
-    # Given is the opinion: [user opinion/perspective]. You are to first list three common arguments that support the opposing side. The three arguments should be separated by bullet points.
-    #
-    # Furthermore, you should then generate credible sources and citations that you used to find those common arguments and any other credible sources related to the counterarguments you made.
-    #         """}, {"role": "user", "content": question}],
+        #     messages=[{"role": "system", "content": """
+        # Given is the opinion: [user opinion/perspective]. You are to first list three common arguments that support the opposing side. The three arguments should be separated by bullet points.
+        #
+        # Furthermore, you should then generate credible sources and citations that you used to find those common arguments and any other credible sources related to the counterarguments you made.
+        #         """}, {"role": "user", "content": question}],
         messages=[{"role": "system", "content": """If you are given a question or statement, answer with this structure:
 
 In the first paragraph of the response, write the title “AFFIRMATIVE:”. Then, list the 2 affirmative arguments in point form (starting with “•”.)
