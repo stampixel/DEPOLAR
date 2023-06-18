@@ -91,7 +91,9 @@ At the end, output the message: “We encourage you to do further in depth resea
         top_p=1
     )
 
-    print(response)
+    # print(response)
     content = response["choices"][0]["message"]["content"]
+    print(content)
+    # content = content.replace("\n", " <br/> ")
     print(content)
     return {"data": content}

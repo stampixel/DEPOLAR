@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
 
 export default function useChat() {
+
+    const [response,setResponse] = useState("")
 
     const header= {
         'content-Type': 'application/json'
@@ -13,7 +14,9 @@ export default function useChat() {
         await axios
             .post("/argument", {"content": data}, header)
             .then(function (response) {
-                console.log(response)
+                // console.log(response.data.data);
+                // const result = string.replace(/(\r\n|\r|\n)/g, '<br>');
+                setResponse(response.data.data.split("\n"));
             })
             .catch(function (error) {
                 alert(error);
@@ -22,6 +25,7 @@ export default function useChat() {
 
 
     return {
-        sendData
+        sendData,
+        response
     };
 }
