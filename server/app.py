@@ -18,7 +18,9 @@ origins = [
     "http://localhost:3000",
     "localhost:3000",
     "https://depolar.vercel.app",
-    "http://depolar.vercel.app"
+    "http://depolar.vercel.app",
+    "https://depolar.vercel.app/bot",
+    "http://depolar.vercel.app/bot"
 ]
 
 """In order to make cross-origin requests -- i.e., requests that originate from a different protocol, IP address, 
